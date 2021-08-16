@@ -1,6 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
 import urllib.parse
 import requests
+
+
 
 BASE_URI = "https://www.metaweather.com"
 
@@ -52,6 +56,7 @@ def forecast():
                   date: {fivedayforecast[i][0]}
                   weather: {fivedayforecast[i][1]}
                   high temp: {round(int(fivedayforecast[i][2]))}''')
+
 
 
 
